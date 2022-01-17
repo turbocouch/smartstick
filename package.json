@@ -1,0 +1,20 @@
+{
+  "name": "smartstick",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx tsc",
+    "patch": "npm start; npm version patch; npm publish;",
+    "minor": "npm start; npm version minor; npm publish;",
+    "major": "npm start; npm version major; npm publish;"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
