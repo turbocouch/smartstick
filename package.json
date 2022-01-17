@@ -7,9 +7,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx tsc",
-    "patch": "npm start; npm version patch; npm publish;",
-    "minor": "npm start; npm version minor; npm publish;",
-    "major": "npm start; npm version major; npm publish;"
+    "patch": "npm start; git add -A; git commit -m '🥳 Added New Release'; npm version patch; npm publish;",
+    "minor": "npm start; git add -A; git commit -m '🥳 Added New Release'; npm version minor; npm publish;",
+    "major": "npm start; git add -A; git commit -m '🥳 Added New Release'; npm version major; npm publish;"
   },
   "files": [
     "index.js",
