@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "typings": "index.d.ts",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npx tsc; node test.js",
     "start": "npx tsc",
     "patch": "npm start; git add -A; git commit -m '🥳 Added New Release'; npm version patch; npm publish;",
     "minor": "npm start; git add -A; git commit -m '🥳 Added New Release'; npm version minor; npm publish;",
@@ -18,5 +19,8 @@
   ],
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^17.0.8"
+  }
 }
